@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugarland Theaters - Onde cada história ganha vida</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo/logo.png" alt="Sugarland Theaters" class="logo-img">
+                <span class="logo-text">Sugarland Theaters</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="movies.html">Filmes</a></li>
+                <li><a href="#location">Localização</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Onde cada história ganha vida</h1>
+            <p class="hero-subtitle">Viva experiências cinematográficas inesquecíveis</p>
+            <a href="movies.html" class="btn btn-primary btn-large">
+                <i class="fas fa-film"></i> Ver Filmes em Cartaz
+            </a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Featured Movies -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-star"></i> Em Destaque</h2>
+                <a href="movies.html" class="view-all">Ver todos <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="movies-grid" id="featuredMovies">
+                <!-- Movies will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2><i class="fas fa-info-circle"></i> Sobre o Sugarland Theaters</h2>
+                    <p>Há mais de 15 anos trazendo as melhores produções do cinema mundial para você. Com salas equipadas com tecnologia de ponta, incluindo projeção 4K, som Dolby Atmos e poltronas reclináveis, garantimos o máximo conforto e qualidade em cada sessão.</p>
+                    <p>Nosso compromisso é proporcionar experiências inesquecíveis para toda a família, com programação diversificada e atendimento de excelência.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-couch"></i>
+                            <h4>Poltronas Reclináveis</h4>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-video"></i>
+                            <h4>Projeção 4K</h4>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-volume-up"></i>
+                            <h4>Som Dolby Atmos</h4>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-popcorn"></i>
+                            <h4>Café & Pipoca Gourmet</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600&h=800&fit=crop" alt="Cinema Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section" id="location">
+        <div class="container">
+            <h2><i class="fas fa-map-marker-alt"></i> Localização</h2>
+            
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="info-card">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua das Estrelas, 1001<br>Centro - São Paulo, SP<br>CEP: 01234-567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p><strong>Seg a Sex:</strong> 12:00 - 00:00<br>
+                            <strong>Sáb e Dom:</strong> 10:00 - 01:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Contato</h4>
+                            <p><i class="fas fa-phone-alt"></i> (11) 3456-7890<br>
+                            <i class="fab fa-whatsapp"></i> (11) 98765-4321<br>
+                            <i class="fas fa-envelope"></i> contato@sugarlandtheaters.com.br</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0977544856744!2d-46.633308684568936!3d-23.561414284682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sSão%20Paulo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3><i class="fas fa-envelope-open-text"></i> Fique por dentro!</h3>
+                    <p>Receba novidades, lançamentos e promoções exclusivas</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit" class="btn btn-primary">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sugarland Theaters</h3>
+                <p>Onde cada história ganha vida</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <a href="index.html">Início</a>
+                <a href="movies.html">Filmes em Cartaz</a>
+                <a href="#location">Localização</a>
+                <a href="#">Promoções</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Atendimento</h3>
+                <a href="tel:1134567890"><i class="fas fa-phone"></i> (11) 3456-7890</a>
+                <a href="https://wa.me/5511987654321"><i class="fab fa-whatsapp"></i> (11) 98765-4321</a>
+                <a href="mailto:contato@sugarlandtheaters.com.br"><i class="fas fa-envelope"></i> Enviar e-mail</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Institucional</h3>
+                <a href="#">Sobre Nós</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Trabalhe Conosco</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sugarland Theaters. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+/* Checkout Page Styles */
+
+.checkout-section {
+    background: var(--light-bg);
+    min-height: calc(100vh - 150px);
+    padding: 40px 0 80px;
+}
+
+.checkout-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+}
+
+.checkout-section h1 i {
+    color: var(--primary-color);
+    margin-right: 15px;
+}
+
+.checkout-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 40px;
+}
+
+.checkout-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 25px;
+}
+
+.checkout-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--text-dark);
+}
+
+.checkout-card h2 i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.ticket-type-selector {
+    display: grid;
+    gap: 15px;
+}
+
+.ticket-type-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: var(--light-bg);
+    border-radius: 10px;
+}
+
+.ticket-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.ticket-info p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.ticket-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.ticket-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.quantity-btn {
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--primary-color);
+    background: white;
+    color: var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.quantity-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.quantity-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.quantity-display {
+    font-size: 1.2rem;
+    font-weight: 700;
+    min-width: 30px;
+    text-align: center;
+}
+
+.terms label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.terms input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.terms a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.order-summary {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 100px;
+}
+
+.order-summary h3 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: var(--text-dark);
+}
+
+.order-summary h3 i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.summary-item {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.summary-item:last-of-type {
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+.summary-item h4 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.summary-details {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.total-section {
+    margin: 25px 0;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.total-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.btn-large {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .checkout-content {
+        grid-template-columns: 1fr 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .checkout-section {
+        padding: 30px 0 60px;
+    }
+    
+    .checkout-section h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .checkout-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .checkout-card {
+        padding: 20px;
+    }
+    
+    .order-summary {
+        position: static;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
